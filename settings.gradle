@@ -1,0 +1,3 @@
+include ':ellipsizetext'
+include ':app'
+rootProject.name = "textview"
