@@ -12,3 +12,6 @@ SpannableString sp = new SpannableString("...全文");
 sp.setSpan(new ForegroundColorSpan(Color.RED), 0, sp.length(), Spanned.SPAN_INCLUSIVE_INCLUSIVE);
 ellipsizeTextView.setText(editText.getText(), sp);
 ```
+
+![微博](/work/weibo.jpeg)
+![自定义](/work/textview1.jpg)
