@@ -1,5 +1,5 @@
-TextView自定义省略号. 仿微博
-思路:根据行数获取合适text在添加自定义省略号
+TextView自定义省略号. 仿微博   
+思路:根据行数获取合适text在添加自定义省略号  
 参考:EllipsizedMultilineTextView和AppCompatTextHelper, EllipsizeTextView(https://github.com/dinuscxj/EllipsizeTextView)
 
 
