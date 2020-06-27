@@ -1,13 +1,7 @@
 package net.shenru.mylibrary;
 
 import android.content.Context;
-import android.text.Layout;
-import android.text.SpannableStringBuilder;
-import android.text.Spanned;
-import android.text.StaticLayout;
-import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -47,7 +41,7 @@ public class EllipsizeTextView extends AppCompatTextView {
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
-        mTexHelper.autoSizeText();
+        mTexHelper.autoText();
     }
 
     /**
@@ -60,6 +54,6 @@ public class EllipsizeTextView extends AppCompatTextView {
         setEllipsize(null);
         setText(text);
         // mTexHelper.setTextStr(this, text);
-        mTexHelper.autoSizeText();
+        mTexHelper.autoText();
     }
 }

@@ -72,7 +72,9 @@ public class EllipsizeTexHelper {
         this.mNeedsAutoSizeText = true;
     }
 
-    public void autoSizeText() {
+    //调整文字
+    public void autoText() {
+
         if (this.ellipsis == null) {
             return;
         }
@@ -108,7 +110,7 @@ public class EllipsizeTexHelper {
             TEMP_RECTF.bottom = availableHeight;
 
             if (isNeedAdjust(TEMP_RECTF)) {
-                CharSequence optimalTextSize = findLargestTextSizeWhichFits(TEMP_RECTF);
+                CharSequence optimalTextSize = findTextSpace(TEMP_RECTF);
                 if (optimalTextSize != mTextView.getText()) {
                     setTextStr(mTextView, optimalTextSize);
                 }
@@ -147,7 +149,7 @@ public class EllipsizeTexHelper {
         }
     }
 
-    private CharSequence findLargestTextSizeWhichFits(RectF availableSpace) {
+    private CharSequence findTextSpace(RectF availableSpace) {
 
         final CharSequence text = originalText;
 
